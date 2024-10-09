@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Belajar CSS - Pemula</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+        /* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    margin: 0;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #0066cc;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.hero-content h2 {
+    font-size: 2.5em;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+}
+
+/* Lesson Content */
+.lesson-content {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.lesson {
+    margin: 20px 0;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+pre {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-left: 3px solid #0066cc;
+}
+
+/* Quiz Section */
+.quiz {
+    margin: 40px 0;
+}
+
+.quiz h3 {
+    font-size: 1.5em;
+}
+
+.quiz .question {
+    margin-bottom: 20px;
+}
+
+.quiz button {
+    background-color: #0066cc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.quiz button:hover {
+    background-color: #003366;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Large Screens (Desktop) */
+@media (min-width: 1024px) {
+    .navbar ul {
+        gap: 30px;
+    }
+
+    .hero-content h2 {
+        font-size: 3em;
+    }
+
+    .hero-content p {
+        font-size: 1.5em;
+    }
+
+    .lesson {
+        padding: 30px;
+    }
+}
+
+/* Medium Screens (Tablet) */
+@media (max-width: 1023px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero {
+        padding: 80px 20px;
+    }
+
+    .lesson {
+        padding: 20px;
+    }
+}
+
+/* Small Screens (Mobile) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero-content h2 {
+        font-size: 2em;
+    }
+
+    .lesson {
+        padding: 15px;
+    }
+}
+
+    </style>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <h1><a href="#">CodeLearn</a></h1>
+        </div>
+        <nav>
+
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Belajar CSS dari Awal</h2>
+            <p>Pahami dasar-dasar CSS dengan contoh, latihan, dan kuis.</p>
+        </div>
+    </section>
+
+    <!-- Lesson Content -->
+    <section class="lesson-content">
+        <h2>Apa itu CSS?</h2>
+        <p>CSS (Cascading Style Sheets) adalah bahasa yang digunakan untuk mendesain dan mengatur tampilan elemen HTML.</p>
+
+        <!-- Lesson 1: Basic CSS Structure -->
+        <div class="lesson">
+            <h3>Lesson 1: Struktur Dasar CSS</h3>
+            <p>CSS digunakan untuk menata elemen HTML dengan cara menambahkan properti dan nilai. Contoh:</p>
+            <pre>
+body {
+    background-color: #f0f0f0;
+}
+            </pre>
+        </div>
+
+        <!-- Lesson 2: Selektor CSS -->
+        <div class="lesson">
+            <h3>Lesson 2: Selektor CSS</h3>
+            <p>Selektor digunakan untuk memilih elemen HTML yang akan diberi gaya. Contoh:</p>
+            <pre>
+h1 {
+    color: blue;
+}
+            </pre>
+        </div>
+
+        <!-- Lesson 3: Box Model -->
+        <div class="lesson">
+            <h3>Lesson 3: Box Model</h3>
+            <p>Setiap elemen HTML memiliki model kotak yang terdiri dari margin, border, padding, dan konten.</p>
+            <pre>
+div {
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #000;
+}
+            </pre>
+        </div>
+
+        <!-- Lesson 4: Flexbox -->
+        <div class="lesson">
+            <h3>Lesson 4: Flexbox</h3>
+            <p>Flexbox adalah cara modern untuk membuat layout responsif dengan mudah.</p>
+            <pre>
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+            </pre>
+        </div>
+
+        <!-- Quiz Section -->
+        <div class="quiz">
+            <h3>Kuis: Uji Pengetahuan CSS Anda</h3>
+            <p>Jawab pertanyaan berikut:</p>
+            <form id="quizForm">
+                <div class="question">
+                    <p>1. Apa singkatan dari CSS?</p>
+                    <input type="radio" name="q1" value="a"> Cascading Style Sheets<br>
+                    <input type="radio" name="q1" value="b"> Colorful Style Sheets<br>
+                    <input type="radio" name="q1" value="c"> Creative Style Sheets<br>
+                </div>
+
+                <div class="question">
+                    <p>2. Apa yang digunakan untuk mengubah warna teks?</p>
+                    <input type="radio" name="q2" value="a"> color<br>
+                    <input type="radio" name="q2" value="b"> text-color<br>
+                    <input type="radio" name="q2" value="c"> font-color<br>
+                </div>
+
+                <button type="button" onclick="checkQuiz()">Kirim Jawaban</button>
+            </form>
+
+            <div id="quizResult"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 CodeLearn | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

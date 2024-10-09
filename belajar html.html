@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>pembelajaran html pemula</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <h1><a href="#">code belajar pemula</a></h1>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Pelajari HTML dari Awal</h2>
+        <P>Kuasai dasar-dasar HTML dengan contoh langsung, latihan, dan kuis.</P>
+    </div>
+  </section>
+
+  <!-- Lesson Content -->
+  <section class="lesson-content">
+    <h2>apa itu HTML?</h2>
+    <p>HTML (HyperText Markup Language) adalah bahasa markup standar untuk membuat halaman web. Ini menggambarkan struktur halaman web menggunakan elemen seperti judul, paragraf, dan tautan.</p>
+    
+    <!-- Lesson 1: Basic HTML Structure -->
+    <div class="lesson">
+      <h3>Pelajaran 1: Struktur Dasar HTML</h3>
+      <p>Dokumen HTML memiliki struktur khusus yang mencakup deklarasi doctype, yaitu `html`, `head`, dan `body` elemen. Di bawah ini adalah struktur HTML paling dasar:
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;nama website&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;untuk judul text website!&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+      </pre>
+      <p>pada contoh di atas, kita memiliki judul (`<h1>`) di dalam bagian tubuh dokumen.</p>
+    </div>
+
+    <!-- Editor Section -->
+    <div class="editor-section">
+      <h3>cobalah sendiri</h3>
+      <textarea id="codeEditor" rows="10" cols="50">
+<!DOCTYPE html>
+<html>
+<head>
+  <title>nama webiste anda</title>
+</head>
+<body>
+  <h1>Hello, World!</h1>
+</body>
+</html>
+      </textarea>
+      <button id="runCode">jalankan code</button>
+    </div>
+
+    <!-- Output Section -->
+    <div class="output-section">
+      <h3>keluarkan</h3>
+      <iframe id="outputFrame"></iframe>
+    </div>
+
+    <!-- Lesson 2: Headings and Paragraphs -->
+    <div class="lesson">
+      <h3>pelajaran 2: Heading dan Paragraphs</h3>
+      <p>HTML memungkinkan Anda membuat berbagai tingkat judul (`h1` sampai `h6`) dan paragraf menggunakan `p` menandai. Berikut ini contohnya:</p>
+      <pre>
+&lt;h1&gt;ini adalah Heading 1&lt;/h1&gt;
+&lt;p&gt; ini adalah paragraph.&lt;/p&gt;
+&lt;h2&gt; ini adalah Heading 2&lt;/h2&gt;
+&lt;p&gt;Ini adalah hal lain paragraph.&lt;/p&gt;
+      </pre>
+      <p>Contoh di atas membuat dua judul dan dua paragraf pada halaman web.</p>
+
+
+    </div>
+
+    
+
+    <!-- Lesson 3: Tables -->
+    <div class="lesson">
+      <h3>pelajaran 3: Tables</h3>
+      <p>Tabel HTML digunakan untuk menampilkan data dalam format terstruktur menggunakan baris dan kolom. Berikut ini contoh dasar tabel:</p>
+      <pre>
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Nama&lt;/th&gt;
+    &lt;th&gt;umur&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;samsudin hooh tenan&lt;/td&gt;
+    &lt;td&gt;40&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;pabroro&lt;/td&gt;
+    &lt;td&gt;30&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+      </pre>
+      <p>Contoh ini memperlihatkan tabel dengan dua kolom dan tiga baris.</p>
+    </div>
+
+
+
+    <!-- Lesson 4: Forms -->
+    <div class="lesson">
+      <h3>pelajaran 4: Forms</h3>
+      <p>Formulir HTML memungkinkan Anda mengumpulkan masukan pengguna. Formulir dasar mencakup elemen seperti bidang teks, tombol radio, dan tombol kirim:</p>
+      <pre>
+&lt;form&gt;
+  &lt;label for="nama"&gt;Nama:&lt;/label&gt;
+  &lt;input type="text" id="nama" name="nama"&gt;
+  &lt;br&gt;
+  &lt;label for="umur"&gt;umur:&lt;/label&gt;
+  &lt;input type="number" id="umur" name="umur"&gt;
+  &lt;br&gt;
+  &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+      </pre>
+      <p>Pengguna dapat mengisi formulir dan mengirimkan datanya.</p>
+    </div>
+
+
+    <!-- Lesson 5: Multimedia -->
+    <div class="lesson">
+      <h3>pelajaran 5: Multimedia</h3>
+      <p>HTML memungkinkan Anda menyematkan elemen multimedia seperti gambar, video, dan audio. Berikut cara menambahkannya:</p>
+      <pre>
+&lt;img src="image.jpg" alt="nama untuk image"&gt;
+
+&lt;video controls&gt;
+  &lt;source src="video.mp4" type="video/mp4"&gt;
+  Browser Anda tidak mendukung tag video.
+&lt;/video&gt;
+
+&lt;audio controls&gt;
+  &lt;source src="audio.mp3" type="audio/mp3"&gt;
+  Browser Anda tidak mendukung elemen audio.
+&lt;/audio&gt;
+      </pre>
+      <p>Contoh ini menunjukkan cara menyematkan file gambar, video, dan audio dalam dokumen HTML.</p>
+    </div>
+
+
+    <!-- Quiz Section -->
+    <div class="quiz">
+      <h3>kuis: Uji Pengetahuan HTML Anda</h3>
+      <p>Jawablah pertanyaan berikut:</p>
+      
+      <form id="quizForm">
+        <!-- Question 1 -->
+        <div class="question">
+          <p>1. Apa kepanjangan dari HTML?</p>
+          <input type="radio" name="q1" value="a"> HyperText Machine Language<br>
+          <input type="radio" name="q1" value="b"> HyperText Markup Language<br>
+          <input type="radio" name="q1" value="c"> HyperText Multi Language<br>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+          <p>2. Apa elemen HTML yang benar untuk membuat paragraf?</p>
+          <input type="radio" name="q2" value="a"> &lt;paragraph&gt;<br>
+          <input type="radio" name="q2" value="b"> &lt;p&gt;<br>
+          <input type="radio" name="q2" value="c"> &lt;pg&gt;<br>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">
+          <p>3. Elemen HTML mana yang digunakan untuk menyisipkan gambar?</p>
+          <input type="radio" name="q3" value="a"> &lt;image&gt;<br>
+          <input type="radio" name="q3" value="b"> &lt;img&gt;<br>
+          <input type="radio" name="q3" value="c"> &lt;picture&gt;<br>
+        </div>
+
+        <button type="button" onclick="checkQuiz()">Submit jawaban</button>
+      </form>
+
+      <div id="quizResult"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 belajar coding pemula</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
